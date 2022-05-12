@@ -1,4 +1,4 @@
-package com.weten.hospital.entities;
+package com.weten.hospital.model;
 
 public enum StatusRDV {
     PENDING,

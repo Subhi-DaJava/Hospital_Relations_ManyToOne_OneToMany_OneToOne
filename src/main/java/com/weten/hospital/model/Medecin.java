@@ -1,4 +1,4 @@
-package com.weten.hospital.entities;
+package com.weten.hospital.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
@@ -8,9 +8,13 @@ import java.util.List;
 public class Medecin {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nom;
+
     private String email;
+
     private String specialite;
+
     @OneToMany(mappedBy = "medecin", fetch = FetchType.LAZY)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private List<RendezVous> rendezVous;

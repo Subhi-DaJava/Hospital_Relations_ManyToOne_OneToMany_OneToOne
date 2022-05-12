@@ -1,9 +1,9 @@
 package com.weten.hospital;
 
-import com.weten.hospital.entities.*;
-import com.weten.hospital.repositories.MedecinRepository;
-import com.weten.hospital.repositories.PatientRepository;
-import com.weten.hospital.repositories.RendezVousRepository;
+import com.weten.hospital.model.*;
+import com.weten.hospital.repository.MedecinRepository;
+import com.weten.hospital.repository.PatientRepository;
+import com.weten.hospital.repository.RendezVousRepository;
 import com.weten.hospital.service.IHospitalService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

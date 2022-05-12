@@ -1,13 +1,13 @@
 package com.weten.hospital.service;
 
-import com.weten.hospital.entities.Consultation;
-import com.weten.hospital.entities.Medecin;
-import com.weten.hospital.entities.Patient;
-import com.weten.hospital.entities.RendezVous;
-import com.weten.hospital.repositories.ConsultationRepository;
-import com.weten.hospital.repositories.MedecinRepository;
-import com.weten.hospital.repositories.PatientRepository;
-import com.weten.hospital.repositories.RendezVousRepository;
+import com.weten.hospital.model.Consultation;
+import com.weten.hospital.model.Medecin;
+import com.weten.hospital.model.Patient;
+import com.weten.hospital.model.RendezVous;
+import com.weten.hospital.repository.ConsultationRepository;
+import com.weten.hospital.repository.MedecinRepository;
+import com.weten.hospital.repository.PatientRepository;
+import com.weten.hospital.repository.RendezVousRepository;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

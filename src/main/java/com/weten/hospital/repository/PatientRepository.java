@@ -1,6 +1,6 @@
-package com.weten.hospital.repositories;
+package com.weten.hospital.repository;
 
-import com.weten.hospital.entities.Patient;
+import com.weten.hospital.model.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PatientRepository extends JpaRepository<Patient, Long> {

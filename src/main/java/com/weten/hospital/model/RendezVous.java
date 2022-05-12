@@ -1,4 +1,4 @@
-package com.weten.hospital.entities;
+package com.weten.hospital.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
@@ -8,12 +8,16 @@ import java.util.Date;
 public class RendezVous {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private Date date;
+
     @Enumerated(EnumType.STRING) // transformer en string
     private StatusRDV status;
+
     @ManyToOne
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Patient patient;
+
     @ManyToOne
     private Medecin medecin;
 

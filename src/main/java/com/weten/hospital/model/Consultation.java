@@ -1,4 +1,4 @@
-package com.weten.hospital.entities;
+package com.weten.hospital.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -8,8 +8,11 @@ import java.util.Date;
 public class Consultation {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private Date dateConsultation;
+
     private String rapport;
+
     @OneToOne
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private RendezVous rendezVous;
