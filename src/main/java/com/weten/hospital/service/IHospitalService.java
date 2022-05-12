@@ -5,7 +5,7 @@ import com.weten.hospital.entities.Medecin;
 import com.weten.hospital.entities.Patient;
 import com.weten.hospital.entities.RendezVous;
 
-public interface IHostpitalService {
+public interface IHospitalService {
 
     Patient savePatient(Patient patient);
 

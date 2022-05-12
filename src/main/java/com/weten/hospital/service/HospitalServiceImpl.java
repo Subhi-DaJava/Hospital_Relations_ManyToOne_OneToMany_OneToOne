@@ -14,17 +14,17 @@ import javax.transaction.Transactional;
 
 @Service
 @Transactional
-public class HostpitalServiceImpl implements IHostpitalService {
+public class HospitalServiceImpl implements IHospitalService {
     // Deux sortes d'injection, soit par @Autowired ou soit par Constructeur(args)
     private PatientRepository patientRepository;
     private MedecinRepository medecinRepository;
     private RendezVousRepository rendezVousRepository;
     private ConsultationRepository consultationRepository;
 
-    public HostpitalServiceImpl(PatientRepository patientRepository,
-                                MedecinRepository medecinRepository,
-                                RendezVousRepository rendezVousRepository,
-                                ConsultationRepository consultationRepository) {
+    public HospitalServiceImpl(PatientRepository patientRepository,
+                               MedecinRepository medecinRepository,
+                               RendezVousRepository rendezVousRepository,
+                               ConsultationRepository consultationRepository) {
         this.patientRepository = patientRepository;
         this.medecinRepository = medecinRepository;
         this.rendezVousRepository = rendezVousRepository;

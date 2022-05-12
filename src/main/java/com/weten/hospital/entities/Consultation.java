@@ -1,5 +1,7 @@
 package com.weten.hospital.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 import java.util.Date;
 @Entity
@@ -9,6 +11,7 @@ public class Consultation {
     private Date dateConsultation;
     private String rapport;
     @OneToOne
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private RendezVous rendezVous;
 
     public Consultation() {

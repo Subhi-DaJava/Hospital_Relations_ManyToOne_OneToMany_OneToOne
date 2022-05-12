@@ -4,7 +4,7 @@ import com.weten.hospital.entities.*;
 import com.weten.hospital.repositories.MedecinRepository;
 import com.weten.hospital.repositories.PatientRepository;
 import com.weten.hospital.repositories.RendezVousRepository;
-import com.weten.hospital.service.IHostpitalService;
+import com.weten.hospital.service.IHospitalService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,7 +25,7 @@ public class HospitalApplication {
 	 * @return un objet
 	 */
 	@Bean
-	CommandLineRunner start(IHostpitalService hostpitalService,
+	CommandLineRunner start(IHospitalService hostpitalService,
 							PatientRepository patientRepository,
 							MedecinRepository medecinRepository,
 							RendezVousRepository rendezVousRepository){
