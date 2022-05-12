@@ -7,6 +7,7 @@ public class RendezVous {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date date;
+    @Enumerated(EnumType.STRING) // transformer en string
     private StatusRDV status;
     @ManyToOne
     private Patient patient;
